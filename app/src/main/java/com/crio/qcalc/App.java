@@ -8,7 +8,21 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         System.out.println(new App().getGreeting());
+
+        StandardCalculator calc = new StandardCalculator();
+        calc.add(1, 1);
+        System.out.println(calc.getResult());
+        calc.subtract(10,7);
+        System.out.println(calc.getResult());
+        calc.multiply(5,7);
+        System.out.println(calc.getResult());
+        calc.divide(88,8);
+        System.out.println(calc.getResult());
+
+
     }
+   
 }
